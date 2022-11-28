@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  database_gateway:
+    image: postgres:latest
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=root
+    ports:
+      - '5432:5432'
+    volumes:
+      - gateway:/var/lib/sql/data
+  database_blog:
+    image: mysql:latest
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_USER= root
+      - MYSQL_PASSWORD=root
+      - MYSQL_DATABASE=blog
+    ports:
+      - '3306:3306'
+    volumes:
+      - blog:/var/lib/sql/data
+volumes:
+  gateway:
+  blog:
