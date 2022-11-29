@@ -8,7 +8,7 @@ https://documenter.getpostman.com/view/18806477/2s8YswSCbn
 
 # Application information
 - App doesn't have UI.Sorry for the bad document, I prepared the whole application in just 2 days.
-![Microservice Diagram](https://github.com/TechCareerBackEndSpringBoot1/airtiesgraduationproject-dikkulah/blob/master/diagram.png)
+![Microservice Diagram](https://github.com/dikkulah/Daily-Blog-App/blob/main/Airties.png)
 
 
 
